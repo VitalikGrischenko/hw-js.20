@@ -8,7 +8,7 @@ const uniqueSortedSkills = users.reduce((acc, user) => {
     const skillsToAdd = user.skills.filter(skill => !acc.includes(skill));
     return acc;
     return skillsToAdd;
-}, );
+}, 0);
 
 uniqueSortedSkills.sort();
 

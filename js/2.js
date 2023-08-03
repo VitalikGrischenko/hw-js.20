@@ -11,6 +11,6 @@ const usersWithFriend = users.reduce((acc, user) => {
         acc.push(user.name);
     }
     return acc;
-}, );
+}, 0);
 
 console.log(usersWithFriend);
